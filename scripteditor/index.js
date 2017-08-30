@@ -1,6 +1,6 @@
 const m = require("mithril");
 const View = require("./View");
-const AbstractValueEditor = require("editron-core/editor/AbstractValueEditor");
+const AbstractValueEditor = require("editron-core/editors/AbstractValueEditor");
 
 
 const MODES = {
