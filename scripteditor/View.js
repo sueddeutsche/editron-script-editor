@@ -3,7 +3,7 @@ const Label = require("mithril-material-forms").label;
 const isNodeContext = require("editron-core/utils/isNodeContext");
 let CodeMirror = require("codemirror");
 
-if (!isNodeContext()) {
+if (isNodeContext() !== true) { // eslint-disable-line no-negated-condition
     require("codemirror/lib/codemirror.css");
     require("codemirror/mode/htmlmixed/htmlmixed");
     require("codemirror/mode/css/css");
