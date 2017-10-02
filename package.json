@@ -12,7 +12,7 @@
   "devDependencies": {
     "ava": "^0.22.0",
     "browser-env": "^3.2.0",
-    "editron-core": "^3.0.0",
+    "editron-core": "3.x",
     "eslint": "^3.19.0",
     "mithril": "1.x",
     "mithril-material-forms": "^2.2.0",
