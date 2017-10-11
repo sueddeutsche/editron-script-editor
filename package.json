@@ -1,6 +1,6 @@
 {
   "name": "editron-script-editor",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Editron - script editor for (currently) html and css",
   "main": "index.js",
   "scripts": {
