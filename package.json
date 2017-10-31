@@ -1,6 +1,6 @@
 {
   "name": "editron-script-editor",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Editron - script editor for (currently) html and css",
   "main": "index.js",
   "scripts": {
@@ -12,10 +12,10 @@
   "devDependencies": {
     "ava": "^0.22.0",
     "browser-env": "^3.2.0",
-    "editron-core": "^3.2.1",
+    "editron-core": "^4.0.0",
     "eslint": "^3.19.0",
     "mithril": "1.x",
-    "mithril-material-forms": "^2.3.1",
+    "mithril-material-forms": "^2.3.2",
     "sinon": "^3.2.1"
   },
   "publishConfig": {
@@ -26,7 +26,7 @@
     "gson-pointer": "^2.1.3"
   },
   "peerDependencies": {
-    "editron-core": "3.x",
+    "editron-core": "4.x",
     "mithril": "1.x",
     "mithril-material-forms": "2.x"
   },
