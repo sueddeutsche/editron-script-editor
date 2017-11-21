@@ -16,10 +16,10 @@
   "devDependencies": {
     "ava": "^0.22.0",
     "browser-env": "^3.2.0",
-    "editron-core": "^4.0.0",
+    "editron-core": "4.x",
     "eslint": "^3.19.0",
     "mithril": "1.x",
-    "mithril-material-forms": "^2.3.2",
+    "mithril-material-forms": "2.x",
     "sinon": "^3.2.1",
     "webpack": "^3.8.1",
     "gson-pointer": "3.x"
