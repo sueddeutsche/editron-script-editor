@@ -48,5 +48,9 @@
       "editron-core/test/support/setupBrowserEnv.js"
     ],
     "verbose": true
-  }
+  },
+  "files": [
+    "dist",
+    "scripteditor"
+  ]
 }
