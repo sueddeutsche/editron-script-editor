@@ -1,5 +1,7 @@
 # [editron](https://github.com/sueddeutsche/editron) Script-Editor
 
+[![Build Status](https://travis-ci.org/sueddeutsche/editron-script-editor.svg?branch=master)](https://travis-ci.org/sueddeutsche/editron-script-editor)
+
 Add code editor for html and css.
 
 `npm i editron-script-editor --save`
