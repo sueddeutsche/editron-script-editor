@@ -30,7 +30,8 @@ module.exports = {
         this.editor = CodeMirror.fromTextArea($textarea, {
             mode: attrs.mode,
             theme: "base16-light",
-            lineWrapping: true
+            lineWrapping: true,
+            lineNumbers: true
         });
 
         this.editor.on("blur", () => attrs.onchange(this.editor.getValue()));
