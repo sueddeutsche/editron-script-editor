@@ -69,8 +69,6 @@ The editor will be added for a matching schema like
 }
 ```
 
-or 
-
 ```json
 {
     "type": "string",
@@ -78,3 +76,9 @@ or
 }
 ```
 
+```json
+{
+    "type": "string",
+    "format": "javascript"
+}
+```

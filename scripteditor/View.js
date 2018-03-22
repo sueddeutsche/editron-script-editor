@@ -5,8 +5,9 @@ let CodeMirror = require("codemirror");
 
 if (isNodeContext() !== true) { // eslint-disable-line no-negated-condition
     require("codemirror/lib/codemirror.css");
-    require("codemirror/mode/htmlmixed/htmlmixed");
     require("codemirror/mode/css/css");
+    require("codemirror/mode/htmlmixed/htmlmixed");
+    require("codemirror/mode/javascript/javascript");
     require("codemirror/theme/base16-light.css");
 } else {
     // @todo mock library in test only
