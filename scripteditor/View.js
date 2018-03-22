@@ -28,7 +28,7 @@ module.exports = {
 
     initEditor($textarea, attrs) {
         this.editor = CodeMirror.fromTextArea($textarea, {
-            mode: "css",
+            mode: attrs.mode,
             theme: "base16-light",
             lineWrapping: true
         });
