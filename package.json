@@ -1,6 +1,6 @@
 {
   "name": "editron-script-editor",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Editron - script editor for (currently) html and css",
   "main": "scripteditor/index.js",
   "scripts": {
@@ -11,8 +11,12 @@
     "prepublishOnly": "npm run dist"
   },
   "keywords": [],
-  "author": "Sascha Goldhofer <noreply@saschagoldhofer.de> (https://github.com/sagold/)",
-  "license": "ISC",
+  "author": "Süddeutsche Zeitung Digitale Medien GmbH",
+  "contributors": [
+    "Sascha Goldhofer <noreply@saschagoldhofer.de> (https://github.com/sagold/)",
+    "Benjamin Urban <benjamin.urban@sueddeutsche.de (https://github.com/benurb/)"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "ava": "^0.22.0",
     "browser-env": "^3.2.0",
@@ -44,5 +48,9 @@
       "editron-core/test/support/setupBrowserEnv.js"
     ],
     "verbose": true
-  }
+  },
+  "files": [
+    "dist",
+    "scripteditor"
+  ]
 }

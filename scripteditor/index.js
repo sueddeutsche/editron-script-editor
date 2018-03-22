@@ -5,8 +5,9 @@ const AbstractValueEditor = require("editron-core/editors/AbstractValueEditor");
 
 
 const MODES = {
+    css: "css",
     htmlmixed: "htmlmixed",
-    css: "css"
+    javascript: "javascript"
 };
 
 const SUPPORTED = Object.keys(MODES);

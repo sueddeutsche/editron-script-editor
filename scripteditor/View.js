@@ -5,8 +5,9 @@ let CodeMirror = require("codemirror");
 
 if (isNodeContext() !== true) { // eslint-disable-line no-negated-condition
     require("codemirror/lib/codemirror.css");
-    require("codemirror/mode/htmlmixed/htmlmixed");
     require("codemirror/mode/css/css");
+    require("codemirror/mode/htmlmixed/htmlmixed");
+    require("codemirror/mode/javascript/javascript");
     require("codemirror/theme/base16-light.css");
 } else {
     // @todo mock library in test only
@@ -27,9 +28,10 @@ module.exports = {
 
     initEditor($textarea, attrs) {
         this.editor = CodeMirror.fromTextArea($textarea, {
-            mode: "css",
+            mode: attrs.mode,
             theme: "base16-light",
-            lineWrapping: true
+            lineWrapping: true,
+            lineNumbers: true
         });
 
         this.editor.on("blur", () => attrs.onchange(this.editor.getValue()));
@@ -56,7 +58,7 @@ module.exports = {
                 m("li", error)
             )),
             m(".mmf-meta",
-                vnode.attrs.description
+                m.trust(vnode.attrs.description)
             )
         );
     }
