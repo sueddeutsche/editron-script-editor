@@ -58,7 +58,7 @@ module.exports = {
                 m("li", error)
             )),
             m(".mmf-meta",
-                vnode.attrs.description
+                m.trust(vnode.attrs.description)
             )
         );
     }
