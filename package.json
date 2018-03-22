@@ -11,8 +11,12 @@
     "prepublishOnly": "npm run dist"
   },
   "keywords": [],
-  "author": "Sascha Goldhofer <noreply@saschagoldhofer.de> (https://github.com/sagold/)",
-  "license": "ISC",
+  "author": "Süddeutsche Zeitung Digitale Medien GmbH",
+  "contributors": [
+    "Sascha Goldhofer <noreply@saschagoldhofer.de> (https://github.com/sagold/)",
+    "Benjamin Urban <benjamin.urban@sueddeutsche.de (https://github.com/benurb/)"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "ava": "^0.22.0",
     "browser-env": "^3.2.0",
