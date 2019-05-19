@@ -1,7 +1,6 @@
 const m = require("mithril");
 const View = require("./View");
-// const AbstractValueEditor = require("editron-core").editors.AbstractValueEditor;
-const AbstractValueEditor = require("editron-core/editors/AbstractValueEditor");
+const AbstractValueEditor = require("editron/editors/AbstractValueEditor");
 
 
 const MODES = {
@@ -36,7 +35,7 @@ class ScriptEditor extends AbstractValueEditor {
         }, options);
 
         super(pointer, controller, options);
-        // this.render();
+        this.render();
     }
 
     render() {

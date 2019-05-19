@@ -1,14 +1,21 @@
 {
   "name": "editron-script-editor",
   "version": "3.0.0",
-  "description": "Editron - script editor for (currently) html and css",
+  "description": "Editron - script editor for html, js and css",
   "main": "scripteditor/index.js",
+  "homepage": "https://github.com/sueddeutsche/editron-script-editor",
+  "bugs": "https://github.com/sueddeutsche/editron-script-editor/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sueddeutsche/editron-script-editor.git"
+  },
   "scripts": {
     "test": "ava",
     "build": "rm -rf build; webpack",
     "dist": "rm -rf dist; NODE_ENV=production webpack",
     "release": "npm run dist",
-    "prepublishOnly": "npm run dist"
+    "prepublishOnly": "npm run dist",
+    "postinstall": "npm --prefix node_modules/editron install"
   },
   "keywords": [],
   "author": "Süddeutsche Zeitung Digitale Medien GmbH",
@@ -20,13 +27,14 @@
   "devDependencies": {
     "ava": "^0.22.0",
     "browser-env": "^3.2.0",
-    "editron-core": "5.x",
+    "editron": "6.x",
     "eslint": "^3.19.0",
+    "gson-pointer": "3.x",
     "mithril": "1.x",
     "mithril-material-forms": "2.x",
     "sinon": "^3.2.1",
-    "webpack": "^3.8.1",
-    "gson-pointer": "3.x"
+    "webpack": "^4.31",
+    "webpack-cli": "^3.3.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -35,7 +43,7 @@
     "codemirror": "^5.25.2"
   },
   "peerDependencies": {
-    "editron-core": "5.x",
+    "editron": "6.x",
     "mithril": "1.x",
     "mithril-material-forms": "2.x",
     "gson-pointer": "3.x"
@@ -45,7 +53,7 @@
       "test/**/*.test.js"
     ],
     "require": [
-      "editron-core/test/support/setupBrowserEnv.js"
+      "editron/test/support/setupBrowserEnv.js"
     ],
     "verbose": true
   },

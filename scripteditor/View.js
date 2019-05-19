@@ -1,6 +1,6 @@
 const m = require("mithril");
 const Label = require("mithril-material-forms").label;
-const isNodeContext = require("editron-core/utils/isNodeContext");
+const isNodeContext = require("editron/utils/isNodeContext");
 let CodeMirror = require("codemirror");
 
 if (isNodeContext() !== true) { // eslint-disable-line no-negated-condition
@@ -35,6 +35,7 @@ module.exports = {
         });
 
         this.editor.on("blur", () => attrs.onchange(this.editor.getValue()));
+        setTimeout(() => this.editor.refresh());
     },
 
     onupdate(vnode) {

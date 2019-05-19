@@ -20,4 +20,3 @@ atlassian-ide-plugin.xml
 *.sublime-workspace
 
 /build/
-/dist/
