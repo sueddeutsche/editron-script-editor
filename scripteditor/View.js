@@ -17,7 +17,8 @@ if (isNodeContext() !== true) { // eslint-disable-line no-negated-condition
                 on: Function.prototype,
                 setValue: Function.prototype,
                 getValue: Function.prototype,
-                toTextArea: Function.prototype
+                toTextArea: Function.prototype,
+                refresh: Function.prototype
             };
         }
     };
