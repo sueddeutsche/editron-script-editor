@@ -1,4 +1,4 @@
-# [editron](https://github.com/sueddeutsche/editron) Script-Editor
+# [editron](https://github.com/sueddeutsche/editron) script-editor
 
 [![Build Status](https://travis-ci.org/sueddeutsche/editron-script-editor.svg?branch=master)](https://travis-ci.org/sueddeutsche/editron-script-editor)
 
