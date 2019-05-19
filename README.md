@@ -20,8 +20,8 @@ Add the editor after the core-modules and it will register automatically (paths 
 <link rel="stylesheet" href="../node_modules/editron-script-editor/dist/editron-script-editor.css">
 
 <!-- plugin editor -->
-<script type="text/javascript" src="../node_modules/editron-core/dist/editron-modules.js"></script>
-<script type="text/javascript" src="../node_modules/editron-core/dist/editron-core.js"></script>
+<script type="text/javascript" src="../node_modules/editron/dist/editron-modules.js"></script>
+<script type="text/javascript" src="../node_modules/editron/dist/editron.js"></script>
 <script type="text/javascript" src="../node_modules/editron-script-editor/dist/editron-script-editor.js"></script>
 ```
 
